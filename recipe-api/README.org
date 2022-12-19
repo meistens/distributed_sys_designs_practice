@@ -1,0 +1,6 @@
+* 1
+Normal stuff
+
+* 2
+Server with self-signed cert will not work if used alone, unless the
+client has a copy
