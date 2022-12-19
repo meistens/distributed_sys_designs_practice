@@ -11,8 +11,8 @@ const PORT = process.env.PORT || 3000;
 const TARGET = process.env.TARGET || 'localhost:4000';
 const server = express();
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.join(__filename);
-let caPath = path.join(__dirname + '/../shared/tls/basic-certificate.cert');
+const __dirname = path.dirname(__filename);
+let caPath = path.join(__dirname + '/../shared/tls/ca-certificate.cert');
 
 const options = {
   agent: new https.Agent({
