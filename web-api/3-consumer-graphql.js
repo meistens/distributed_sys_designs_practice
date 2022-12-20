@@ -26,7 +26,7 @@ server.get('/', async (req, res) => {
   });
   // hardcoded value will return null. For whatever reason, do things the way it is on node-fetch docs(using express as a server should be a red flag on its own, since fetch can be used standalone to communicate with the producer), other than that, it works
 
-  return res.status(200).json({
+  return res.send({
     consumer_pid: process.pid,
     producer_data: await reqt.json(),
   });

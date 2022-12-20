@@ -16,3 +16,6 @@ used/seperated as a config/utility.
 But it is nit efficient because it is antipattern and does not scale
 well with gRPCs (makes clustering redundant). While this bit seems
 okay, best not use em for real projects (hobbies, maybe)
+
+* 5
+HAproxies. 
