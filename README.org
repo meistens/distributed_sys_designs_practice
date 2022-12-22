@@ -1,1 +1,31 @@
-Strictly practice, use at your own risk
+* 1- Beginning
+Setup environment, used a shoddy web server (NGINX configuration with
+HAProxy not covered yet)
+
+* 2 - Protocols
+Server with self-signed cert will not work if used alone, unless the
+client has a copy, which was done (check file numbers).
+
+* 3 - Still Protocols
+GraphQL, RPC and gRPC schemas. RPC not covered here, only graphql
+
+* 4 - Scalability
+Clusters (workers) for scaling servers. Practice with node clusters
+but that's antipattern and generally bad practice (example codes not
+covered).
+
+* 5 - Scalability (HAProxies)
+HAproxies. Load balancing (install haproxy), compression, tls
+termination, rate limiting and stuff. Basically, lifts most of the
+heavy work done by node.
+
+Load balancing configs, this one includes health checks and there's more to it so check their docs. Plus
+configuring with NGINX requires you to edit HAProxy configs as
+superuser (admin, root, sudo...)
+
+Compression (gzip or br compression algorithm)
+
+TLS termination (remember generating certs to use in protocols, well we're letting HAProxy
+handle it and more without adding cpu overhead)
+
+Note: eshell is acting up, best get vterm setup soon or revise its configuration
