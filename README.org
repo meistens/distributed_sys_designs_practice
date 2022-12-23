@@ -35,3 +35,11 @@ requests and processing em once its free to process another)
 Both complements each other.
 
 SLA and Load testing (tells us the number of connections can handle)
+Install autocannon globally (might wanna explore other tools to know
+which one fits your needs, for now I go with this)
+
+The results of the tests done using termux on android while it looks
+interesting should not be take seriously unless you are running tests
+on an actual server. Also if you are not satisfied with the result and
+need more throughput, go play with C/C++ or Rust (at least you won't
+cry much or quit halfway into it)
