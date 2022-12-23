@@ -43,3 +43,6 @@ interesting should not be take seriously unless you are running tests
 on an actual server. Also if you are not satisfied with the result and
 need more throughput, go play with C/C++ or Rust (at least you won't
 cry much or quit halfway into it)
+
+Update: load test done passing requests via HAProxy, increased
+latency.
