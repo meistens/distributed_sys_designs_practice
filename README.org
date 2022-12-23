@@ -27,5 +27,11 @@ Compression (gzip or br compression algorithm)
 
 TLS termination (remember generating certs to use in protocols, well we're letting HAProxy
 handle it and more without adding cpu overhead)
-
 Note: eshell is acting up, best get vterm setup soon or revise its configuration
+
+Rate limiting and back pressure (first example shows node dropping
+requests past its given limit, HAProxy config got us queueing the
+requests and processing em once its free to process another)
+Both complements each other.
+
+SLA and Load testing (tells us the number of connections can handle)
