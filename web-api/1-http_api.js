@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+const dns = require('node:dns');
+dns.setDefaultResultOrder('ipv4first');
 const express = require('express');
 const fetch = require('node-fetch')
 const HOST = process.env.HOST || '127.0.0.1';
